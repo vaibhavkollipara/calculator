@@ -11,7 +11,7 @@ class Button extends Component {
 
     render(){
         return(
-            <div className="Button">
+            <div className="Button" onClick={this.props.task.bind(this)}>
                 {this.state.tag}
             </div>
         );
