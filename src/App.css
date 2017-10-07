@@ -1,20 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 @media only screen and (max-width : 620px){
   .App{
     display: flex;
     width: 100vw;
     height:100vh;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .Display{
     display: flex;
     flex-grow: 2;
-    background-color: red;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 2vw;
+    padding-right: 5vw;
+    width: 90vw;
   }
 
-  .Input{
+  .input-container{
     display: flex;
     flex-grow: 8;
-    background-color: green;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .input-row{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 90vw;
+  }
+
+  .Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 2vw;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0px;
+    transition: 250ms ease-in-out;
+    box-shadow: 1px 1px 3px gray;
+  }
+
+  .Button:hover{
+    background-color: cyan;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+  }
+
+  .Button:active{
+    color: white;
+    box-shadow: none;
+  }
+
+  .footer{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
   }
 }
